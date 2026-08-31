@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Sarah Jennings – Partner at Cashiers Valley Real Estate. Call, text, or email for luxury mountain home buying or selling in Cashiers, NC.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Contact Sarah Jennings • Luxury Real Estate • Cashiers Valley, NC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap');
+        body { font-family: 'Cormorant Garamond', serif; line-height: 1.75; font-variant-numeric: lining-nums tabular-nums; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .nav-link, .logo-name { font-family: 'Cormorant Garamond', serif; font-weight: 700; letter-spacing: 0.5px; }
+        .hero {
+            background: linear-gradient(rgba(10,37,64,0.72), rgba(10,37,64,0.72)),
+                        url('https://sarahjenningsre.com/assets/images/hero/hero-main.jpg') center/cover no-repeat fixed;
+            height: 50vh;
+        }
+        .gold { color: #D4AF77; }
+        .nav-link { transition: all 0.3s ease; }
+        .nav-link:hover { color: #D4AF77; }
+        .hamburger { cursor: pointer; }
+        .mobile-menu { display: none; }
+        .mobile-menu.active { display: flex; }
+    </style>
+</head>
+<body class="bg-[#F8F1E3] text-[#0A2540]">
+    <div id="sandbox-banner" style="position:fixed;bottom:0;left:0;right:0;z-index:99999;background:#D4AF77;color:#0A2540;text-align:center;padding:8px 16px;font-size:13px;font-weight:700;letter-spacing:0.4px;">PREVIEW SANDBOX — not sarahjenningsre.com &nbsp;·&nbsp; <a href="https://sarahjenningsre.com" style="color:#0A2540;text-decoration:underline;">live site</a></div>
+
+    <nav class="bg-white shadow fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="logo-name text-4xl tracking-tighter text-[#0A2540]">Sarah Jennings</div>
+                <div class="pl-3 border-l border-[#D4AF77]">
+                    <span class="block text-xs tracking-[3px] gold">REAL ESTATE</span>
+                </div>
+            </a>
+            <div class="hidden md:flex gap-10 text-sm font-medium">
+                <a href="listings.html" class="nav-link">Properties</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <a href="contact.html" class="nav-link text-[#D4AF77]">Contact</a>
+            </div>
+            <a href="tel:8285534331" class="hidden md:block px-8 py-4 border-2 border-[#0A2540] text-sm font-semibold rounded-2xl hover:bg-[#0A2540] hover:text-white transition">828.553.4331</a>
+            <div class="md:hidden hamburger" id="hamburger"><i class="fa-solid fa-bars text-3xl"></i></div>
+        </div>
+        <div class="mobile-menu bg-white border-t flex-col items-center py-6 text-lg font-medium md:hidden" id="mobile-menu">
+            <a href="listings.html" class="py-3 nav-link">Properties</a>
+            <a href="about.html" class="py-3 nav-link">About</a>
+            <a href="community.html" class="py-3 nav-link">Community</a>
+            <a href="contact.html" class="py-3 nav-link">Contact</a>
+            <a href="tel:8285534331" class="mt-6 px-8 py-4 border-2 border-[#0A2540] text-sm font-semibold rounded-2xl hover:bg-[#0A2540] hover:text-white transition">828.553.4331</a>
+        </div>
+    </nav>
+
+    <section class="hero flex items-center justify-center text-white pt-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-6xl md:text-7xl font-bold leading-none mb-6">Let’s Find Your Mountain Home</h1>
+            <p class="text-4xl gold tracking-wide">I personally answer every call, text, and email</p>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 py-24">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="https://sarahjenningsre.com/assets/images/headshot/sarah-contact.jpg" alt="Sarah Jennings" class="rounded-3xl shadow-2xl w-full">
+            </div>
+            <div class="space-y-10">
+                <div>
+                    <a href="tel:8285534331" class="block text-6xl font-light tracking-widest hover:text-[#D4AF77] transition">828.553.4331</a>
+                </div>
+                <div>
+                    <a href="mailto:sarah@cashiersvalley.com" class="block text-3xl hover:text-[#D4AF77] transition">sarah@cashiersvalley.com</a>
+                </div>
+                <div class="text-lg opacity-80">
+                    404 Highway 107 S<br>
+                    Cashiers, NC 28717
+                </div>
+                <button onclick="saveToContacts()"
+                        class="mt-8 inline-block px-12 py-5 text-lg font-semibold border-2 border-[#0A2540] bg-white text-[#0A2540] rounded-2xl hover:bg-[#0A2540] hover:text-white transition">
+                    Save Sarah Jennings to My Phone
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 text-center text-xs text-gray-500 border-t">
+        <p>Sarah Jennings • Partner, Cashiers Valley Real Estate • © 2026</p>
+        <p class="mt-2">Proudly serving Cashiers, Highlands & the Southern Blue Ridge Mountains</p>
+    </footer>
+
+    <script>
+        function saveToContacts() {
+            const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:Jennings;Sarah;;;\nFN:Sarah Jennings\nORG:Cashiers Valley Real Estate\nTITLE:Partner & Co-Founder\nTEL;TYPE=CELL:8285534331\nEMAIL:sarah@cashiersvalley.com\nADR;TYPE=WORK:;;404 Highway 107 S;Cashiers;NC;28717;USA\nURL:https://sarahjenningsre.com\nEND:VCARD`;
+            const blob = new Blob([vcard], { type: 'text/vcard' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'Sarah-Jennings.vcf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburger.addEventListener('click', () => { mobileMenu.classList.toggle('active'); });
+    </script>
+</body>
+</html>
