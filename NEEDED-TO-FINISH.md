@@ -10,6 +10,9 @@ Still missing:
 2. New lead / hero photo
    Suggested: assets/images/hero/hero-main.jpg
 
+2b. Mobile-cropped hero photo (smaller file, used under 800px)
+   Suggested: assets/images/hero/hero-main-mobile.jpg
+
 3. New contact photo
    Suggested: assets/images/headshot/sarah-contact.jpg
 
