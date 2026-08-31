@@ -1,39 +1,21 @@
 # Needed to finish Sarah’s edit list
-Updated 2026-08-31. Preview repo only.
+Updated 2026-08-31 after load/usability pass. Preview repo only.
 
-Still missing:
+Still missing from Sarah’s original list:
 
 1. Cashiers Valley Real Estate logo
-   PNG or SVG, works on cream and on #3d482f
-   Suggested: assets/images/logos/cvre-logo.png
-
-2. New lead / hero photo
-   Suggested: assets/images/hero/hero-main.jpg
-
-2b. Mobile-cropped hero photo (smaller file, used under 800px)
-   Suggested: assets/images/hero/hero-main-mobile.jpg
-
+2. New lead / hero photo (current hero is a compressed crop of the existing mountain shot)
 3. New contact photo
-   Suggested: assets/images/headshot/sarah-contact.jpg
+4. Recent Sales list — section hidden until addresses exist
 
-4. Recent Sales list
-   Address, town, sold price or “price upon request”, year
-   No public sold list was available 2026-08-31
-
-5. Optional local listing photos
-   assets/images/properties/
-   if CVRE hotlinks break
-
-Done in this preview pass:
-- Palette locked: #3d482f / #D4AF77 / #F8F1E3 / #FFFFFF
-- Fonts locked: Playfair Display + Cormorant Garamond
-- Contrast pairing rules
-- Tagline + sub-tagline
-- Home copy
-- Deeply Rooted as bullets
-- Two current listings
-- Full CVRE testimonial
-- Why Sarah page
-- Referral page (25%, mailto sarah@cashiersvalley.com)
-- Nav includes Why Sarah + Referral
-- Recent Sales heading + Coming soon
+Done in this pass:
+- Hero no longer 404s on mobile; compressed WebP embedded (desktop ~156KB, mobile ~62KB vs 2.29MB live JPEG)
+- Headshots no longer hotlinked from production
+- Fonts self-hosted (latin WOFF2 only)
+- Recent Sales removed until data exists
+- Top nav trimmed to Properties · About · Community · Contact
+- Why Sarah + Referral stay as pages + footer links
+- font-trial.html removed
+- Favicon + theme-color
+- Overlay lightened so the mountain reads
+- Hero service paragraph removed from the first screen
