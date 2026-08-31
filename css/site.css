@@ -156,6 +156,8 @@ img { max-width: 100%; display: block; }
   background: var(--gold);
   color: var(--forest);
   border: none;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
 }
 
 .hamburger {
