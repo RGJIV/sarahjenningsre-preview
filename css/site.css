@@ -117,6 +117,7 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: -0.02em;
   color: var(--forest);
   line-height: 1;
+  transform: translateY(-0.12em);
 }
 .brand-rule { width: 1px; height: 2rem; background: var(--gold); }
 .brand-mark {
