@@ -387,8 +387,8 @@ blockquote {
 }
 .fact {
   background: var(--white);
-  padding: 1.4rem;
-  border-top: 3px solid var(--gold);
+  padding: 1.4rem 1.4rem 1.4rem 1.6rem;
+  border-left: 3px solid var(--gold);
 }
 .steps { counter-reset: step; margin: 1.5rem 0 0; padding: 0; list-style: none; }
 .steps li {
