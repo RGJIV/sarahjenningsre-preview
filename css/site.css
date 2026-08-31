@@ -84,6 +84,7 @@ img { max-width: 100%; display: block; }
   letter-spacing: -0.02em;
   color: var(--forest);
   line-height: 1;
+  line-height: 32px;
 }
 .brand-rule {
   width: 1px;
@@ -98,6 +99,7 @@ img { max-width: 100%; display: block; }
   color: var(--forest);
   font-weight: 600;
   line-height: 1;
+  line-height: 32px;
 }
 @media (max-width: 480px) {
   .site-name { font-size: 1.3rem; }
@@ -116,6 +118,7 @@ img { max-width: 100%; display: block; }
   padding-bottom: 2px;
   border-bottom: 2px solid transparent;
   margin-left: 1.4rem;
+  line-height: 32px;
 }
 .nav-links a:hover {
   text-decoration: none;
