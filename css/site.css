@@ -83,7 +83,6 @@ img { max-width: 100%; display: block; }
   font-size: 1.65rem;
   letter-spacing: -0.02em;
   color: var(--forest);
-  line-height: 1;
   line-height: 32px;
 }
 .brand-rule {
@@ -98,7 +97,6 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   color: var(--forest);
   font-weight: 600;
-  line-height: 1;
   line-height: 32px;
 }
 @media (max-width: 480px) {
