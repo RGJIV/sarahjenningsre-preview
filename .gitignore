@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+# Thumbnails
+Thumbs.db
+# Temporary files
+*.tmp

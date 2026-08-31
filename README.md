@@ -5,28 +5,24 @@
 | | Production | This repo |
 |---|---|---|
 | Repo | [RGJIV/sarahjenningsre](https://github.com/RGJIV/sarahjenningsre) | [RGJIV/sarahjenningsre-preview](https://github.com/RGJIV/sarahjenningsre-preview) |
-| Public URL | [https://sarahjenningsre.com](https://sarahjenningsre.com) | [https://rgjiv.github.io/sarahjenningsre-preview/](https://rgjiv.github.io/sarahjenningsre-preview/) (after Pages is enabled) |
+| Public URL | [https://sarahjenningsre.com](https://sarahjenningsre.com) | [https://rgjiv.github.io/sarahjenningsre-preview/](https://rgjiv.github.io/sarahjenningsre-preview/) |
 | Custom domain | Yes (`CNAME` = sarahjenningsre.com) | **Never** |
 
-Created 2026-08-31 so Grok / experiments can change files without touching the live site.
+Seeded 2026-08-31 from live `main` (commit 880622cf).
 
-## Hard rules
+## What is different from live
 
-1. Do **not** add a `CNAME` file. That would fight production for [sarahjenningsre.com](https://sarahjenningsre.com).
-2. Do **not** push to [RGJIV/sarahjenningsre](https://github.com/RGJIV/sarahjenningsre) unless Richard explicitly says deploy to live.
-3. Do **not** overwrite real photos (`assets/images/headshot/*`, `assets/images/hero/hero-main.jpg`) without a deploy plan.
-4. Promote to production only after Richard reviews the preview URL.
+- Gold **PREVIEW SANDBOX** bar at the bottom of every page
+- `noindex, nofollow` on every page + `robots.txt` Disallow
+- Hero and headshot photos are loaded from [sarahjenningsre.com](https://sarahjenningsre.com) (GitHub file API cannot upload the 2.4 MB hero image)
+- **No `CNAME` file**
+- No production sitemap
 
-## Enable GitHub Pages (one-time)
+## Enable GitHub Pages
 
-1. Open this repo on GitHub.
-2. **Settings → Pages**.
-3. Build and deployment → Source: **Deploy from a branch**.
-4. Branch: **main** / folder: **/ (root)** → **Save**.
-5. Wait 1–2 minutes, then open [https://rgjiv.github.io/sarahjenningsre-preview/](https://rgjiv.github.io/sarahjenningsre-preview/).
+1. [Repo Settings → Pages](https://github.com/RGJIV/sarahjenningsre-preview/settings/pages)
+2. Source: **Deploy from a branch**
+3. Branch: **main** / folder: **/ (root)** → Save
+4. Open [https://rgjiv.github.io/sarahjenningsre-preview/](https://rgjiv.github.io/sarahjenningsre-preview/)
 
-Official docs: [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
-
-## What is not here yet
-
-HTML pages and photos have **not** been copied from production. Next step is to seed this repo with a working preview (HTML + assets), still with no `CNAME`.
+Do not add a custom domain.
