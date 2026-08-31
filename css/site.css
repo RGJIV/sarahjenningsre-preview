@@ -382,7 +382,7 @@ blockquote {
 }
 
 .facts { display: grid; gap: 1rem; margin: 2rem 0; }
-@media (min-width: 700px) {
+@media (min-width: 720px) {
   .facts { grid-template-columns: repeat(3, 1fr); }
 }
 .fact {
