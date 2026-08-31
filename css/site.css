@@ -97,6 +97,7 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   color: var(--forest);
   font-weight: 600;
+  line-height: 1;
 }
 @media (max-width: 480px) {
   .site-name { font-size: 1.3rem; }
