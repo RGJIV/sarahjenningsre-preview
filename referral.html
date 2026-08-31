@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Agent referral partnership with Sarah Jennings, Cashiers Valley Real Estate. 25% referral fee.">
   <meta name="robots" content="noindex, nofollow">
-  <title>Referral • For Agents • Sarah Jennings</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="theme-color" content="#3d482f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%233d482f'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='16' fill='%23D4AF77' font-family='Georgia'%3ESJ%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://sarahjenningsre.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
+  <meta name="description" content="Agent referral partnership with Sarah Jennings, Cashiers Valley Real Estate. 25% referral fee.">
+  <title>Referral • For Agents • Sarah Jennings</title>
 </head>
 <body>
   <div class="sandbox-banner">PREVIEW SANDBOX — not sarahjenningsre.com · <a href="https://sarahjenningsre.com">live site</a></div>
@@ -22,19 +21,18 @@
         <span class="brand-mark">Real Estate</span>
       </a>
       <div class="nav-links">
-        <a href="listings.html">Properties</a><a href="about.html">About</a><a href="why-sarah.html">Why Sarah</a><a href="community.html">Community</a><a href="referral.html" class="is-current">Referral</a><a href="contact.html">Contact</a>
+        <a href="listings.html">Properties</a><a href="about.html">About</a><a href="community.html">Community</a><a href="contact.html" class="is-current">Contact</a>
       </div>
       <a class="btn btn-phone nav-phone" href="tel:8285534331">828.553.4331</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="mobile-menu" id="mobile-menu">
-      <a href="listings.html">Properties</a><a href="about.html">About</a><a href="why-sarah.html">Why Sarah</a><a href="community.html">Community</a><a href="referral.html" class="is-current">Referral</a><a href="contact.html">Contact</a>
+      <a href="listings.html">Properties</a><a href="about.html">About</a><a href="community.html">Community</a><a href="contact.html" class="is-current">Contact</a>
       <a class="btn btn-phone" href="tel:8285534331">828.553.4331</a>
     </div>
   </nav>
-  
   <section class="band-a">
     <div class="wrap wrap-narrow">
       <p class="eyebrow">For Agents</p>
@@ -73,18 +71,26 @@
       </div>
     </div>
   </section>
-
   <footer class="site-footer">
     <div class="footer-cta">
       <h2>Let’s find your mountain home</h2>
-      <p>I personally answer every call, text, and email.</p>
-      <p><a class="cta-phone" href="tel:8285534331">828.553.4331</a></p>
-      <p><a href="mailto:sarah@cashiersvalley.com">sarah@cashiersvalley.com</a></p>
-      
+      <p class="footer-note">I personally answer every call, text, and email.</p>
+      <p class="footer-contact">
+        <a class="cta-phone" href="tel:8285534331">828.553.4331</a>
+        <span class="footer-sep" aria-hidden="true"></span>
+        <a href="mailto:sarah@cashiersvalley.com">sarah@cashiersvalley.com</a>
+      </p>
     </div>
-    <div class="footer-links"><a href="listings.html">Properties</a> <a href="about.html">About</a> <a href="why-sarah.html">Why Sarah</a> <a href="community.html">Community</a> <a href="referral.html">Referral</a> <a href="contact.html">Contact</a></div>
-    <p>Sarah Jennings • Partner, Cashiers Valley Real Estate • © 2026</p>
-    <p>Proudly serving Cashiers, Highlands, Sapphire, Glenville & the Southern Blue Ridge</p>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="listings.html">Properties</a>
+      <a href="about.html">About</a>
+      <a href="why-sarah.html">Why Sarah</a>
+      <a href="community.html">Community</a>
+      <a href="referral.html">Referral</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-legal">Sarah Jennings · Partner, Cashiers Valley Real Estate · © 2026</p>
+    <p class="footer-serving">Cashiers, Highlands, Sapphire, Glenville & the Southern Blue Ridge</p>
   </footer>
   <script>
     const hamburger = document.getElementById("hamburger");
@@ -92,8 +98,9 @@
     hamburger.addEventListener("click", () => {
       const open = mobileMenu.classList.toggle("open");
       hamburger.setAttribute("aria-expanded", open ? "true" : "false");
+      hamburger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      document.documentElement.style.overflow = open ? "hidden" : "";
     });
-    
   </script>
 </body>
 </html>
