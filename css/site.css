@@ -98,6 +98,10 @@ img { max-width: 100%; display: block; }
   color: var(--forest);
   font-weight: 600;
 }
+@media (max-width: 480px) {
+  .site-name { font-size: 1.3rem; }
+  .brand { gap: 0.4rem; }
+}
 .nav-links {
   display: none;
   gap: 1.4rem;
