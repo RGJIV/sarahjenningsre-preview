@@ -52,6 +52,8 @@ body {
   background: var(--cream);
   -webkit-font-smoothing: antialiased;
   padding-bottom: 52px;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 
 h1, h2, h3, .site-name {
@@ -137,14 +139,29 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: 0.04em;
 }
 .nav-links a {
+  position: relative;
   text-decoration: none;
   color: var(--forest);
-  padding-bottom: 2px;
-  border-bottom: 2px solid transparent;
   margin-left: 1.35rem;
+  line-height: 1;
 }
-.nav-links a:hover { text-decoration: none; border-bottom-color: var(--forest); }
-.nav-links a.is-current { border-bottom-color: var(--forest); }
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 2px;
+  background: transparent;
+  pointer-events: none;
+}
+.nav-links a:hover {
+  text-decoration: none;
+}
+.nav-links a:hover::after,
+.nav-links a.is-current::after {
+  background: var(--forest);
+}
 
 .btn {
   display: inline-flex;
@@ -160,6 +177,7 @@ img { max-width: 100%; height: auto; display: block; }
   cursor: pointer;
   border-radius: 2px;
   transition: opacity 0.15s ease;
+  font-variant-numeric: lining-nums;
 }
 .btn:hover { opacity: 0.9; text-decoration: none; }
 .btn-primary { background: var(--gold); color: var(--forest); border: none; }
@@ -172,6 +190,8 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: "Playfair Display", serif;
   font-weight: 600;
   white-space: nowrap;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 
 .hamburger {
