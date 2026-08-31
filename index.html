@@ -1,172 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Sarah Jennings, Partner at Cashiers Valley Real Estate. Expert in luxury mountain homes in Cashiers, Highlands & Southern Blue Ridge Mountains, NC.">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Sarah Jennings • Luxury Real Estate • Cashiers Valley, NC</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap');
-        body {
-            font-family: 'Cormorant Garamond', serif;
-            line-height: 1.75;
-            font-variant-numeric: lining-nums tabular-nums;
-            -webkit-font-smoothing: antialiased;
-        }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .nav-link, .logo-name { font-family: 'Cormorant Garamond', serif; font-weight: 700; letter-spacing: 0.5px; }
-        .hero {
-            background: linear-gradient(rgba(10,37,64,0.72), rgba(10,37,64,0.72)),
-                        url('https://sarahjenningsre.com/assets/images/hero/hero-main.jpg') center/cover no-repeat fixed;
-            height: 50vh;
-        }
-        .gold { color: #D4AF77; }
-        .nav-link { transition: all 0.3s ease; }
-        .nav-link:hover { color: #D4AF77; }
-        .hamburger { cursor: pointer; }
-        .mobile-menu { display: none; }
-        .mobile-menu.active { display: flex; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Sarah Jennings, Partner at Cashiers Valley Real Estate. Luxury mountain real estate in Cashiers and Highlands, NC.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Sarah Jennings • Luxury Mountain Real Estate • Cashiers & Highlands, NC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
 </head>
-<body class="bg-[#F8F1E3] text-[#0A2540]">
-    <div id="sandbox-banner" style="position:fixed;bottom:0;left:0;right:0;z-index:99999;background:#D4AF77;color:#0A2540;text-align:center;padding:8px 16px;font-size:13px;font-weight:700;letter-spacing:0.4px;">PREVIEW SANDBOX — not sarahjenningsre.com &nbsp;·&nbsp; <a href="https://sarahjenningsre.com" style="color:#0A2540;text-decoration:underline;">live site</a></div>
+<body>
+  <div class="sandbox-banner">PREVIEW SANDBOX — not sarahjenningsre.com · <a href="https://sarahjenningsre.com">live site</a></div>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="site-name">Sarah Jennings</span>
+        <span class="brand-rule" aria-hidden="true"></span>
+        <span class="brand-mark">Real Estate</span>
+      </a>
+      <div class="nav-links">
+        <a href="listings.html">Properties</a><a href="about.html">About</a><a href="why-sarah.html">Why Sarah</a><a href="community.html">Community</a><a href="referral.html">Referral</a><a href="contact.html">Contact</a>
+      </div>
+      <a class="btn btn-phone nav-phone" href="tel:8285534331">828.553.4331</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="listings.html">Properties</a><a href="about.html">About</a><a href="why-sarah.html">Why Sarah</a><a href="community.html">Community</a><a href="referral.html">Referral</a><a href="contact.html">Contact</a>
+      <a class="btn btn-phone" href="tel:8285534331">828.553.4331</a>
+    </div>
+  </nav>
+  
+  <header class="hero">
+    <div>
+      <h1>Sarah Jennings</h1>
+      <p class="hero-tag">Luxury Mountain Real Estate in Cashiers & Highlands, NC</p>
+      <p class="hero-sub">Local knowledge. Strategic marketing. A better way to buy and sell in the mountains.</p>
+      <p class="hero-service">Serving Cashiers, Highlands, Sapphire, Glenville and surrounding communities, with specialties including luxury homes, private communities, golf communities and investment properties.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="contact.html">Schedule a private consultation</a>
+        <a class="btn btn-secondary-dark" href="listings.html">Explore properties</a>
+      </div>
+    </div>
+  </header>
 
-    <nav class="bg-white shadow fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3">
-                <div class="logo-name text-4xl tracking-tighter text-[#0A2540]">Sarah Jennings</div>
-                <div class="pl-3 border-l border-[#D4AF77]">
-                    <span class="block text-xs tracking-[3px] gold">REAL ESTATE</span>
-                </div>
-            </a>
-            <div class="hidden md:flex gap-10 text-sm font-medium">
-                <a href="listings.html" class="nav-link">Properties</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="community.html" class="nav-link">Community</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </div>
-            <a href="tel:8285534331" class="hidden md:block px-8 py-4 border-2 border-[#0A2540] text-sm font-semibold rounded-2xl hover:bg-[#0A2540] hover:text-white transition">828.553.4331</a>
-            <div class="md:hidden hamburger text-3xl" id="hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+  <section class="band-a">
+    <div class="wrap split">
+      <div>
+        <img class="portrait" src="https://sarahjenningsre.com/assets/images/headshot/sarah-jennings.jpg" alt="Sarah Jennings">
+        <p class="caption">Sarah Jennings, Partner & Co-Founder</p>
+      </div>
+      <div class="prose">
+        <h2>Mountain Real Estate, With a Local Perspective</h2>
+        <p>Buying or selling a home in Cashiers and the surrounding mountains is about more than square footage, a view, or a price per square foot. It's about understanding the communities, the roads, the seasons, the amenities, and the details that can make a real difference in a mountain property.</p>
+        <p>I've spent years living and working on the Cashiers-Highlands Plateau, and I bring that local knowledge to every client I work with. My approach is straightforward: listen carefully, know the market, present properties thoughtfully, and give you honest advice—even when it isn't necessarily what you want to hear.</p>
+        <p>Whether you're looking for a mountain retreat, a family home, an investment property, or preparing to sell a property you've loved for years, I'm here to make the process feel informed, personal, and manageable.</p>
+        <p class="lede">I know the mountain. I know the market. And I'm here to help you make the right move.</p>
+        <div class="inline-links">
+          <a href="about.html">Read my full story →</a>
+          <a href="why-sarah.html">Why Sarah →</a>
         </div>
-        <div class="mobile-menu bg-white border-t flex-col items-center py-6 text-lg font-medium md:hidden" id="mobile-menu">
-            <a href="listings.html" class="py-3 nav-link">Properties</a>
-            <a href="about.html" class="py-3 nav-link">About</a>
-            <a href="community.html" class="py-3 nav-link">Community</a>
-            <a href="contact.html" class="py-3 nav-link">Contact</a>
-            <a href="tel:8285534331" class="mt-6 px-8 py-4 border-2 border-[#0A2540] text-sm font-semibold rounded-2xl hover:bg-[#0A2540] hover:text-white transition">828.553.4331</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-a" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>Featured Properties</h2>
+          <p>Current listings represented by Sarah Jennings</p>
         </div>
-    </nav>
-
-    <section class="hero flex items-center justify-center text-white pt-20">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h1 class="text-6xl md:text-7xl font-bold leading-none mb-6 tracking-tight">Sarah Jennings</h1>
-            <p class="text-4xl gold tracking-wide mb-8">Luxury Real Estate • Cashiers Valley, NC</p>
-            <p class="max-w-xl mx-auto text-xl opacity-90">Timeless expertise. Personal service. Your trusted guide to extraordinary mountain homes in the Southern Blue Ridge.</p>
-            <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
-                <a href="contact.html" class="px-10 py-5 text-lg font-semibold border-2 border-white bg-white text-[#0A2540] rounded-2xl hover:bg-transparent hover:text-white transition">Schedule a Private Consultation</a>
-                <a href="listings.html" class="px-10 py-5 text-lg font-semibold border-2 border-white rounded-2xl hover:bg-white hover:text-[#0A2540] transition">Explore Properties</a>
+        <a href="https://cashiersvalley.com/listings/agent/sarah-jennings/" target="_blank" rel="noopener noreferrer">View all →</a>
+      </div>
+      <div class="cards two">
+          <a class="card" href="https://cashiersvalley.com/listings/1001361" target="_blank" rel="noopener noreferrer">
+            <img src="https://d1u39ah4l74ffy.cloudfront.net/img/OzASNyovLjUaMiU6Ym55fXB0c2I/1024/1/150-old-hunters-run-cashiers-nc-28717.webp" alt="150 Old Hunters Run, Cashiers, NC">
+            <div class="card-body">
+              <p class="card-meta">4 Bed • 5 Bath • 2.19 AC • Cashiers</p>
+              <p class="card-price">$2,495,000</p>
+              <p class="card-addr">150 Old Hunters Run, Cashiers, NC</p>
+              <span class="card-cta">View details</span>
             </div>
+          </a>
+          <a class="card" href="https://cashiersvalley.com/listings/1003920" target="_blank" rel="noopener noreferrer">
+            <img src="https://d1u39ah4l74ffy.cloudfront.net/img/OzASNyovLjUaMiU6Ym55fXJ-d2M/1024/1/18-horsepasture-river-court-sapphire-nc-28774.webp" alt="18 Horsepasture River Court, Sapphire, NC">
+            <div class="card-body">
+              <p class="card-meta">3 Bed • 3 Bath • 0.62 AC • Sapphire</p>
+              <p class="card-price">$699,000</p>
+              <p class="card-addr">18 Horsepasture River Court, Sapphire, NC</p>
+              <span class="card-cta">View details</span>
+            </div>
+          </a>
         </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="max-w-5xl mx-auto px-6 py-24">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <img src="https://sarahjenningsre.com/assets/images/headshot/sarah-jennings.jpg" alt="Sarah Jennings" class="rounded-3xl shadow-2xl w-full">
-                <p class="text-center text-sm mt-4 text-gray-500 font-medium">Sarah Jennings, Partner & Co-Founder</p>
-            </div>
-            <div>
-                <h2 class="text-5xl font-bold mb-8 leading-none">A Partner You Can Trust</h2>
-                <div class="prose text-lg leading-relaxed">
-                    <p>A native of Germantown, Maryland, I graduated from NC State University with a degree in Marketing and Communications. After building a successful career in high-end events and marketing in Washington, DC, my family and I moved to Cashiers to raise our two boys.</p>
-                    <p>Today, as a founding Partner at Cashiers Valley Real Estate, I bring the same dedication, attention to detail, and personal touch to every client I serve.</p>
-                </div>
-                <a href="about.html" class="inline-flex items-center gap-3 mt-8 text-sm font-medium gold hover:text-[#0A2540] transition">
-                    Read My Full Story <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+  <section class="band-b">
+    <div class="wrap wrap-narrow center">
+      <blockquote>“I was so impressed with Sarah Jennings as the realtor we chose to sell our home! She is extremely knowledgeable about the market in the area and worked diligently to make the deal we were looking for to make the sale! She is an outstanding agent and a wonderful person! If you are looking to sell or purchase, Sarah Jennings is the person you should be contacting!”</blockquote>
+      <p class="quote-attr">— Client testimonial, Cashiers Valley Real Estate</p>
+    </div>
+  </section>
 
-    <section class="bg-white py-24">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex justify-between items-end mb-12">
-                <div>
-                    <h2 class="text-5xl font-bold">Featured Properties</h2>
-                    <p class="text-gray-600 mt-2">Exclusive listings & carefully selected homes</p>
-                </div>
-                <a href="listings.html" class="hidden md:flex items-center gap-2 text-sm font-medium gold hover:text-[#0A2540]">View All Properties <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="group bg-[#F8F1E3] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
-                    <img src="https://picsum.photos/id/1016/600/400" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" alt="">
-                    <div class="p-8">
-                        <p class="text-xs gold tracking-widest">3 BED • 3.5 BATH • CASHIERS</p>
-                        <p class="text-3xl font-semibold mt-1">$1,095,000</p>
-                        <a href="https://cashiersvalley.com/listings/agent/sarah-jennings/" class="text-sm gold hover:underline mt-4 block">View Details →</a>
-                    </div>
-                </div>
-                <div class="group bg-[#F8F1E3] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
-                    <img src="https://picsum.photos/id/870/600/400" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" alt="">
-                    <div class="p-8">
-                        <p class="text-xs gold tracking-widest">4 BED • 5 BATH • CASHIERS</p>
-                        <p class="text-3xl font-semibold mt-1">$2,695,000</p>
-                        <a href="https://cashiersvalley.com/listings/agent/sarah-jennings/" class="text-sm gold hover:underline mt-4 block">View Details →</a>
-                    </div>
-                </div>
-                <div class="group bg-[#F8F1E3] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
-                    <img src="https://picsum.photos/id/201/600/400" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" alt="">
-                    <div class="p-8">
-                        <p class="text-xs gold tracking-widest">5 BED • 6 BATH • HIGHLANDS</p>
-                        <p class="text-3xl font-semibold mt-1">$3,850,000</p>
-                        <a href="https://cashiersvalley.com/listings/agent/sarah-jennings/" class="text-sm gold hover:underline mt-4 block">View Details →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="band-a">
+    <div class="wrap wrap-narrow">
+      <h2>Deeply Rooted</h2>
+      <p>A commitment to the community I call home. I am proud to have served on the boards of these organizations.</p>
+      <ul class="org-list">
+            <li><a href="https://www.discoverjacksonnc.com/tda-docs/" target="_blank" rel="noopener noreferrer">Jackson County Tourism Development Authority</a></li>
+            <li><a href="https://www.summitschool.org/" target="_blank" rel="noopener noreferrer">Summit Charter School Foundation (Board Chair) — Cashiers Festival of Trees</a></li>
+            <li><a href="https://www.cashiersareachamber.com/" target="_blank" rel="noopener noreferrer">Cashiers Area Chamber of Commerce (Board Chair)</a></li>
+            <li><a href="https://www.bgcplateau.org/" target="_blank" rel="noopener noreferrer">Boys & Girls Club of the Plateau</a></li>
+            <li><a href="https://cashiersvalleypreschool.com/" target="_blank" rel="noopener noreferrer">Cashiers Valley Preschool</a></li>
+          </ul>
+      <p class="inline-links"><a href="community.html">Learn more about my community involvement →</a></p>
+    </div>
+  </section>
 
-    <section class="max-w-3xl mx-auto px-6 py-24 text-center">
-        <div class="italic text-2xl leading-relaxed">"I was so impressed with Sarah Jennings as the realtor we chose to sell our home! She is extremely knowledgeable about the market in the area and worked diligently to make the deal we were looking for. She is an outstanding agent and a wonderful person!"</div>
-        <p class="mt-8 text-sm font-medium">— Recent Client, Cashiers Valley</p>
-    </section>
+  <section class="band-a" style="padding-top:0">
+    <div class="wrap wrap-narrow">
+      <h2>Recent Sales</h2>
+      <p class="coming">Coming soon.</p>
+    </div>
+  </section>
 
-    <section class="bg-white py-24">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold mb-12">Deeply Rooted in Cashiers</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-[#F8F1E3] p-10 rounded-3xl">Jackson County Tourism Development Authority</div>
-                <div class="bg-[#F8F1E3] p-10 rounded-3xl">Summit Charter School Foundation (Board Chair)</div>
-                <div class="bg-[#F8F1E3] p-10 rounded-3xl">Cashiers Area Chamber • Boys & Girls Club • Festival of Trees</div>
-            </div>
-            <a href="community.html" class="mt-12 inline-block text-sm font-medium gold hover:text-[#0A2540]">Learn More About My Community Involvement →</a>
-        </div>
-    </section>
-
-    <section class="bg-[#0A2540] text-white py-24">
-        <div class="max-w-2xl mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold mb-8">Let’s Find Your Mountain Home</h2>
-            <p class="text-xl mb-10">I personally answer every call, text, and email.</p>
-            <a href="tel:8285534331" class="block text-5xl font-light tracking-widest hover:text-[#D4AF77] transition">828.553.4331</a>
-            <a href="mailto:sarah@cashiersvalley.com" class="block mt-6 text-2xl hover:text-[#D4AF77]">sarah@cashiersvalley.com</a>
-            <p class="mt-12 text-sm opacity-70">404 Highway 107 S • Cashiers, NC 28717</p>
-        </div>
-    </section>
-
-    <footer class="bg-white py-12 text-center text-xs text-gray-500 border-t">
-        <p>Sarah Jennings • Partner, Cashiers Valley Real Estate • © 2026</p>
-        <p class="mt-2">Proudly serving Cashiers, Highlands & the Southern Blue Ridge Mountains</p>
-    </footer>
-
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobile-menu');
-        hamburger.addEventListener('click', () => { mobileMenu.classList.toggle('active'); });
-    </script>
+  <footer class="site-footer">
+    <div class="footer-cta">
+      <h2>Let’s find your mountain home</h2>
+      <p>I personally answer every call, text, and email.</p>
+      <p><a class="cta-phone" href="tel:8285534331">828.553.4331</a></p>
+      <p><a href="mailto:sarah@cashiersvalley.com">sarah@cashiersvalley.com</a></p>
+      <div class="inline-links" style="justify-content:center">
+        <a href="referral.html">Referral</a>
+        <a href="why-sarah.html">Why Sarah</a>
+      </div>
+    </div>
+    <div class="footer-links"><a href="listings.html">Properties</a> <a href="about.html">About</a> <a href="why-sarah.html">Why Sarah</a> <a href="community.html">Community</a> <a href="referral.html">Referral</a> <a href="contact.html">Contact</a></div>
+    <p>Sarah Jennings • Partner, Cashiers Valley Real Estate • © 2026</p>
+    <p>Proudly serving Cashiers, Highlands, Sapphire, Glenville & the Southern Blue Ridge</p>
+  </footer>
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobile-menu");
+    hamburger.addEventListener("click", () => {
+      const open = mobileMenu.classList.toggle("open");
+      hamburger.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  </script>
 </body>
 </html>

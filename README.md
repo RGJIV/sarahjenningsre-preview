@@ -8,15 +8,14 @@
 | Public URL | [https://sarahjenningsre.com](https://sarahjenningsre.com) | [https://rgjiv.github.io/sarahjenningsre-preview/](https://rgjiv.github.io/sarahjenningsre-preview/) |
 | Custom domain | Yes (`CNAME` = sarahjenningsre.com) | **Never** |
 
-Seeded 2026-08-31 from live `main` (commit 880622cf).
+## Locked design (2026-08-31)
 
-## What is different from live
-
-- Gold **PREVIEW SANDBOX** bar at the bottom of every page
-- `noindex, nofollow` on every page + `robots.txt` Disallow
-- Hero and headshot photos are loaded from [sarahjenningsre.com](https://sarahjenningsre.com) (GitHub file API cannot upload the 2.4 MB hero image)
+- Forest `#3d482f` · Gold `#D4AF77` · Cream `#F8F1E3` · White `#FFFFFF`
+- Type: Playfair Display + Cormorant Garamond
+- Navy and the unused leaf-green swatch are not used
 - **No `CNAME` file**
-- No production sitemap
+
+See [NEEDED-TO-FINISH.md](NEEDED-TO-FINISH.md) for photos, logo, and recent sales still outstanding.
 
 ## Enable GitHub Pages
 

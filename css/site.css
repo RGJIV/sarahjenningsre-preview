@@ -39,6 +39,7 @@ a:hover { text-decoration: underline; text-decoration-color: var(--gold); }
 
 img { max-width: 100%; display: block; }
 
+/* Sandbox */
 .sandbox-banner {
   position: fixed;
   bottom: 0; left: 0; right: 0;
@@ -54,6 +55,7 @@ img { max-width: 100%; display: block; }
 }
 .sandbox-banner a { color: var(--forest); text-decoration: underline; }
 
+/* Nav — Band C / cream-white. Never gold type on cream. */
 .site-nav {
   position: sticky;
   top: 0;
@@ -202,6 +204,7 @@ img { max-width: 100%; display: block; }
 }
 .nav-phone { display: none; }
 
+/* Bands */
 .band-a { background: var(--cream); color: var(--forest); }
 .band-b { background: var(--forest); color: var(--cream); }
 .band-b h1, .band-b h2, .band-b h3 { color: var(--white); }
@@ -280,6 +283,7 @@ img { max-width: 100%; display: block; }
 .inline-links { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 1.4rem; }
 .inline-links a { font-weight: 700; }
 
+/* Cards */
 .cards {
   display: grid;
   gap: 1.5rem;
