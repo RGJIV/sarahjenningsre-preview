@@ -1,28 +1,40 @@
 # Needed to finish Sarah’s edit list
-Updated 2026-08-31 evening. Preview repo only. Live site untouched.
+Updated 2026-09-02. Preview repo only.
 
-## Sarah still owes
+Still missing:
 
-1. **Cashiers Valley Real Estate logo** — header and/or footer. Folder `assets/images/logos/` is empty.
-2. **New lead / hero photo** — homepage hero still uses the existing mountain shot from the live site (`hero-main.jpg`).
-3. **New contact photo** — Contact page still uses the existing `sarah-contact.jpg` from the live site.
-4. **Recent Sales addresses** — section stays off the site until she sends sold properties (address, price, date).
+1. Cashiers Valley Real Estate logo
+   PNG or SVG, works on cream and on #3d482f
+   Suggested: assets/images/logos/cvre-logo.png
 
-Optional if she wants it swapped too:
-5. New About / lead portrait (current `sarah-jennings.jpg` is the existing live headshot).
-6. New Community photo (current `sarah-community.jpg` is the existing live photo).
+2. New lead / hero photo
+   Suggested: assets/images/hero/hero-main.jpg
 
-## Preview state as of 2026-08-31
+3. New contact photo
+   Suggested: assets/images/headshot/sarah-contact.jpg
 
-- Palette: forest `#3d482f` · gold `#D4AF77` · cream `#F8F1E3` · white
-- Type: Playfair Display + Cormorant Garamond (latin WOFF2 from fonts.gstatic.com)
-- Header nav: Properties · About · Why Sarah · Community · Referral · Contact + phone box
-- Why Sarah and Referral pages live; also in footer
-- Recent Sales not shown
-- `font-trial.html` removed
-- Favicon + theme-color
-- Hero overlay lightened; hero image is the live JPEG (no mobile 404)
-- Headshots still hotlinked from sarahjenningsre.com until replacements arrive
-- Site-wide lining figures on all numbers
-- Header links vertically centered; current-page line does not shift type
-- Name optically lifted next to REAL ESTATE
+4. Recent Sales list
+   Address, town, sold price or “price upon request”, year
+   No public sold list was available 2026-08-31
+
+5. Optional local listing photos
+   assets/images/properties/
+   if CVRE hotlinks break
+
+6. Optional: connect Sarah’s Instagram for a true rotating grid
+   Official post embeds + the live CVRE Facebook timeline are on the preview home (2026-09-02).
+   A full auto-updating Instagram grid needs Sarah to authorize the account in Meta (or a widget such as Behold). No third-party widget account has been created.
+
+Done in this preview pass:
+- Palette locked: #3d482f / #D4AF77 / #F8F1E3 / #FFFFFF
+- Fonts locked: Playfair Display + Cormorant Garamond
+- Contrast pairing rules
+- Tagline + sub-tagline
+- Home copy
+- Deeply Rooted as bullets
+- Two current listings
+- Full CVRE testimonial
+- Why Sarah page
+- Referral page (25%, mailto sarah@cashiersvalley.com)
+- Nav includes Why Sarah + Referral
+- Recent Sales heading + Coming soon
